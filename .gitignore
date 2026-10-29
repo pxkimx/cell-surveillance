@@ -1,0 +1,19 @@
+# the user's own movies and results: never published
+NM rupture/
+*.mov
+*.mp4
+*.avi
+*.tif
+*.tiff
+Cell Surveillance results/
+# built app and exports (rebuild with scripts/build_app.sh)
+*.app/
+*.zip
+_website-export-*/
+# Python and tooling
+__pycache__/
+*.pyc
+.pytest_cache/
+.venv/
+*.log
+.DS_Store

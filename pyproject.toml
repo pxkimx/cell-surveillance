@@ -1,0 +1,19 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "cell-surveillance"
+version = "0.4.0"
+description = "Track single cells in live-cell movies and measure nuclear rupture, movement, division and death."
+requires-python = ">=3.10"
+dependencies = [
+    "numpy", "scipy", "pandas", "scikit-image", "opencv-python", "matplotlib", "pillow", "pyyaml", "tqdm",
+    "tifffile", "streamlit>=1.37", "plotly",
+]
+
+[project.scripts]
+cell-surveillance = "cellsurveillance.cli:main"
+
+[tool.setuptools]
+packages = ["cellsurveillance"]
